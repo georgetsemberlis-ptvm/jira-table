@@ -1,7 +1,7 @@
 # Work Orders Table (Jira Forge custom field)
 
-A Jira custom field that displays related Airtable Work Orders as a table on an issue (WO ID, name linked to the
-Airtable interface, designer, status, due date). It does not depend on linked Jira issues. The field stores a JSON
+A Jira custom field that displays related Airtable Work Orders as a table on an issue (WO ID linked to the
+Airtable interface, name, designer, status, due date). It does not depend on linked Jira issues. The field stores a JSON
 string; an Airtable automation keeps it up to date.
 
 ```
