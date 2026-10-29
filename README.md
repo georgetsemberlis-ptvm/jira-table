@@ -46,7 +46,7 @@ Field mapping: `id` = Work Order ID, `name` = Name, `url` = Work Order Interface
                     "designer": "Michael Aguila", "status": "Active", "dueDate": "2026-11-20" } ] }
 ```
 
-Max 100 rows and about 30k characters (Jira string-field limit); the script trims oldest-priority rows to fit.
+Max 100 rows and about 30k characters (Jira string-field limit); rows are sorted by due date and the script drops the latest-due rows if needed to fit.
 
 ## Notes for admin review
 
