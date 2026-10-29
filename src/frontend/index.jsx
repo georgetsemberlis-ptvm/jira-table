@@ -25,8 +25,8 @@ const toRows = (workOrders) =>
   workOrders.map((wo, i) => ({
     key: `wo-${wo.id || i}`,
     cells: [
-      { key: 'id', content: wo.id ? `WO-${wo.id}` : '' },
-      { key: 'name', content: wo.url ? <Link href={wo.url} openNewTab>{wo.name || wo.id}</Link> : wo.name },
+      { key: 'id', content: wo.id ? (wo.url ? <Link href={wo.url} openNewTab>{`WO-${wo.id}`}</Link> : `WO-${wo.id}`) : '' },
+      { key: 'name', content: wo.name },
       { key: 'designer', content: wo.designer },
       { key: 'status', content: wo.status ? <Lozenge appearance={statusAppearance(wo.status)}>{wo.status}</Lozenge> : '' },
       { key: 'dueDate', content: wo.dueDate },
